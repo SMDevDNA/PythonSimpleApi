@@ -9,7 +9,6 @@ items = {
     "grapes": "A bunch of green grapes"
 }
 
-
 @app.route('/items/<string:name>', methods=['GET'])
 def get_item(name):
     item = items.get(name)
